@@ -18,6 +18,24 @@ class AuthScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const Text(
+                'Iniciar Sesión',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 16),
+              const Text(
+                'Elige tu método de autenticación preferido',
+                style: TextStyle(
+                  color: Colors.white70,
+                  fontSize: 16,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 40),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -34,7 +52,7 @@ class AuthScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text('Continue with Google'),
+                  child: Text('Continuar con Google'),
                 ),
               ),
               SizedBox(
@@ -45,14 +63,14 @@ class AuthScreen extends StatelessWidget {
                     foregroundColor: WidgetStatePropertyAll(Colors.white),
                   ),
                   onPressed: () {},
-                  child: Text('Continue with Apple'),
+                  child: Text('Continuar con Apple'),
                 ),
               ),
               SizedBox(
                 width: double.infinity,
                 child: DraggiButton(
                   onPressed: () {},
-                  text: 'Create a new wallet manually',
+                  text: 'Crear nueva wallet manualmente',
                 ),
               ),
 
@@ -61,7 +79,7 @@ class AuthScreen extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {},
                   child: Text(
-                    'Access existing wallet',
+                    'Acceder con wallet existente',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),

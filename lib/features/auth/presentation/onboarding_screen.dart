@@ -18,11 +18,23 @@ class OnboardingScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('assets/images/icons/dragon_front.png'),
-              Text(
-                'Comparte tu opinion y ayuda a mejorar los eventos de tu comunidad',
+              const SizedBox(height: 24),
+              const Text(
+                '¡Bienvenido a SatisProof!',
                 style: TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 28,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 16),
+              const Text(
+                'Comparte tu opinión y ayuda a mejorar los eventos de tu comunidad',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 16,
                 ),
                 textAlign: TextAlign.center,
               ),
